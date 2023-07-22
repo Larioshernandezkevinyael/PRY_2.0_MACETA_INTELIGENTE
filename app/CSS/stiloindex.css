@@ -1,0 +1,191 @@
+/** {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo {
+  height: 60px;
+  width: 70px;
+}
+.arriba {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  background: #00ff00;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.img {
+  height: 100px;
+  width: 100px;
+}*/
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado */
+.head {
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #0add0ad7;
+  padding: 20px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.arriba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo {
+  width: 60px;
+  height: 60px;
+}
+
+.arriba a {
+  display: block;
+  padding: 18px 18px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+.arriba a:hover {
+  background-color: #dbf2db;
+  border-radius: 10px;
+}
+
+/* Estilos del contenido principal */
+.main2 {
+  text-align: center;
+  padding: 40px;
+}
+
+.main2 h1 {
+  font-size: 36px;
+  color: #333;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.main2 h3 {
+  font-size: 23px;
+  color: #777;
+  font-style: italic;
+}
+.img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Estilos de la sección de la maceta inteligente */
+section {
+  padding: 40px;
+}
+
+section h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+section p {
+  color: #777;
+}
+
+.navimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 100px;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+  justify-content: center;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 25px;
+}
+table td {
+  text-align: center;
+  justify-content: center;
+}
+
+/* Estilos del pie de página */
+.pie {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.pie a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 10px;
+}
+/****/
+.texto {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.texto h3 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+.texto hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.texto p {
+  color: #777;
+}
