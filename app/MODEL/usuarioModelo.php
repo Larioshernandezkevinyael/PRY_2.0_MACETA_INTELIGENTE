@@ -18,8 +18,9 @@ public function getAll(){
     $this->dbconn->closeConnection();
     return $usuario;
 }
+//metodo para obtener un usuario por id
 public function getById($id){
-    $sql="SELECT * FROM usuario WHERE idcliente=$id";
+    $sql="SELECT * FROM usuario WHERE idcliente='".$id."'";
     $conn=$this->dbconn->getConnection();
     $reslt=$conn->query($sql);
     if($reslt && $reslt->num_rows > 0){
@@ -30,6 +31,8 @@ public function getById($id){
     $this->dbconn->closeConnection();
     return $usuario;
 }
+
+//funcion para el logeo
 public function getCredentials($us, $ps){
     $sql="SELECT * FROM usuario WHERE usuario=$us AND contraseña=$ps";
     $conn =$this->dbconn->getConnection();
@@ -42,6 +45,7 @@ public function getCredentials($us, $ps){
     $this->dbconn->closeConnection();
     return $usuario;
 }
+//elimina un usuario 
 public function deleteRow($id){
     $sql="DELETE FROM usuario WHERE idcliente=$id";
     $conn =$this->dbconn->getConnection();
@@ -55,7 +59,7 @@ public function deleteRow($id){
     return $res;
 }
 
-
+//insertar un usuario 
 public function insertuser($usuario){
     $sql="INSERT INTO usuarios (nombre, apelllidop, apellidom, telefono, correo, usuario, contraseña) 
     VALUES('".$usuario['nombre']."', '".$usuario['app']."','".$usuario['apm']."','".$usuario['Tel']."',
@@ -70,12 +74,14 @@ public function insertuser($usuario){
     $this->dbconn->closeConnection();
     return $res;
 }
-public function updateuser($id, $user){
-    $username = $user['usuario'];
-    $email = $user['correo'];
-    $password = $user['contraseña'];
+/////////////////////////////////////////////////////////////7///////
 
-    $sql="UPDATE usuario SET usuario='$username', correo='$email', contraseña='$password' WHERE idcliente=$id";
+//metodo para editar usuario
+public function updateuser($user){
+
+
+    $sql="UPDATE ";/// pendiente para rebicion 
+
     $connection =$this->dbconn->getConnection();
     $reslt = $connection->query($sql);
     if($reslt){
@@ -86,7 +92,7 @@ public function updateuser($id, $user){
     $this->dbconn->closeConnection();
     return $res;
 }
-
+////////////////////////////////////////////////////////////////////////
 
 
 
